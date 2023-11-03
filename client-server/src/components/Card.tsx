@@ -89,14 +89,24 @@ const CardTitle = styled.div`
 const Description = styled.div`
 
  
-   background-color: #1d1a1a;
+   background-color: #1d1a1a !important;
    border-radius:  0px 0px 15px 15px;
-   font-family: 'Amiga Forever', sans-serif;
+   font-family: 'Amiga Forever', sans-serif !important;
    display: grid;
    text-align: left;
    font-size: 0.6rem;
    padding: 1rem;
+
+   p{
+    background-color: #1d1a1a !important;
+    font-size: 0.6rem !important;
+   }
     `;
+
+
+
+
+
 
 
 
@@ -114,16 +124,10 @@ function Card() {
        <Description>
         
         
-        <div><b>Type</b></div>
-        <div>
-       The user is invisible to all creatures and objects, and cannot be detected by any means.
-
-       
-        </div>
-        
-        <div>
-          
-        </div>
+       <div className="nes-container with-title">
+  <p className="title">Container.is-dark</p>
+  <p>Good morning. Thou hast had a good night's sleep, I hope.</p>
+</div>
         </Description>
     </CardStructureInside>
     
