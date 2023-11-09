@@ -52,7 +52,7 @@ export const MyContextProvider: React.FC<MyContextProviderProps> = ({ children }
 
   // trunk-ignore(eslint/@typescript-eslint/no-explicit-any)
   const { data, error, isLoading, refetchData } = GetData<any>({
-    url: `http://localhost:5000/jobs_by_language?page=${page}&per_page=${perPage}&language=${language}`,
+    url: `http://127.0.0.1:8080/cards?page=${page}&per_page=1`,
   });
 
 
